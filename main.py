@@ -6,6 +6,9 @@ from typing import Optional, Dict
 
 load_dotenv()
 
+port = int(os.environ.get("PORT", 8000))  # 8000 is fallback for local run
+chanlit.run(port=port, host="0.0.0.0")
+
 genai_api_key = os.getenv("GEMINI_API_KEY")
 
 genai.configure(api_key = genai_api_key)
