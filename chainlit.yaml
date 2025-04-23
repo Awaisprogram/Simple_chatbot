@@ -24,4 +24,6 @@ oauth_providers:
   google:
     client_id: ${OAUTH_GOOGLE_CLIENT_ID}
     client_secret: ${OAUTH_GOOGLE_CLIENT_SECRET}
+    
+language: en
 
